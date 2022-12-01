@@ -1,0 +1,6 @@
+{
+    "RTT_Studio.Build.Parallel_Jobs": "8",
+    "files.associations": {
+        "rtconfig.h": "c"
+    }
+}

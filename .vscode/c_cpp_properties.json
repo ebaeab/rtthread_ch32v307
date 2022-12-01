@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "intelliSenseMode": "clang-x64",
+            "name": "Win32",
+            "cppStandard": "c++11",
+            "cStandard": "c99",
+            "compilerPath": "D:/self/env_released_1.2.0/env/tools/gnu_gcc/arm_gcc/mingw/bin/riscv-none-embed-gcc",
+            "includePath": [
+                "D:/self/ch32",
+                "D:/self/ch32/applications",
+                "D:/self/ch32/board",
+                "D:/self/ch32/libcpu/cpu",
+                "D:/self/ch32/libraries/hal_drivers",
+                "D:/self/ch32/libraries/hal_drivers/config",
+                "D:/self/ch32/libraries/hal_libraries/bmsis",
+                "D:/self/ch32/libraries/hal_libraries/bmsis/include",
+                "D:/self/ch32/libraries/hal_libraries/ch32v307_hal",
+                "D:/self/ch32/libraries/hal_libraries/ch32v307_hal/include",
+                "D:/self/ch32/rt-thread/components/dfs/filesystems/devfs",
+                "D:/self/ch32/rt-thread/components/dfs/include",
+                "D:/self/ch32/rt-thread/components/drivers/include",
+                "D:/self/ch32/rt-thread/components/drivers/usb/usbhost",
+                "D:/self/ch32/rt-thread/components/drivers/usb/usbhost/class",
+                "D:/self/ch32/rt-thread/components/drivers/usb/usbhost/core",
+                "D:/self/ch32/rt-thread/components/drivers/usb/usbhost/include",
+                "D:/self/ch32/rt-thread/components/finsh",
+                "D:/self/ch32/rt-thread/components/libc/compilers/common",
+                "D:/self/ch32/rt-thread/components/libc/compilers/newlib",
+                "D:/self/ch32/rt-thread/components/net/lwip-2.1.2/src",
+                "D:/self/ch32/rt-thread/components/net/lwip-2.1.2/src/arch/include",
+                "D:/self/ch32/rt-thread/components/net/lwip-2.1.2/src/include",
+                "D:/self/ch32/rt-thread/components/net/lwip-2.1.2/src/include/netif",
+                "D:/self/ch32/rt-thread/components/net/netdev/include",
+                "D:/self/ch32/rt-thread/components/net/sal_socket/impl",
+                "D:/self/ch32/rt-thread/components/net/sal_socket/include",
+                "D:/self/ch32/rt-thread/components/net/sal_socket/include/dfs_net",
+                "D:/self/ch32/rt-thread/components/net/sal_socket/include/socket",
+                "D:/self/ch32/rt-thread/components/net/sal_socket/include/socket/sys_socket",
+                "D:/self/ch32/rt-thread/include"
+            ],
+            "defines": [
+                "HAVE_CCONFIG_H",
+                "RT_USING_NEWLIB",
+                "__RTTHREAD__"
+            ]
+        }
+    ],
+    "version": 4
+}
