@@ -13,6 +13,7 @@
 #include "drivers/pin.h"
 #include <board.h>
 #include"cpuusage.h"
+#include"app_km.h"
 /* Global typedef */
 
 /* Global define */
@@ -31,15 +32,16 @@
  */
 int main(void)
 {
+    uint8_t dev = 0,s = 0;
     rt_kprintf("MCU: CH32V307\n");
 	rt_kprintf("SysClk: %dMHz\n",SystemCoreClock/1048576);
     rt_kprintf("www.wch.cn\n");
 	LED1_BLINK_INIT();
     cpu_usage_init();
-
 	while(1)
 	{
-	    rt_thread_mdelay(2);
+	    rt_thread_mdelay(1);
+        USBH_MainDeal();
 	}
 }
 

@@ -26,7 +26,7 @@ __attribute__((aligned(4))) uint8_t  USBHS_TX_Buf[ USBHS_MAX_PACKET_SIZE ];     
  *
  * @return  none
  */
-#if defined (CH32V30x_D8C)
+
 void USBHS_RCC_Init( void )
 {
     RCC_USBCLK48MConfig( RCC_USBCLK48MCLKSource_USBPHY );
@@ -36,7 +36,6 @@ void USBHS_RCC_Init( void )
     RCC_USBHSPHYPLLALIVEcmd( ENABLE );
     RCC_AHBPeriphClockCmd( RCC_AHBPeriph_USBHS, ENABLE );
 }
-#endif
 
 /*********************************************************************
  * @fn      USBHS_Host_Init
@@ -55,7 +54,6 @@ void USBHS_Host_Init( FunctionalState sta )
         USBHSH->CONTROL = USBHS_UC_CLR_ALL | USBHS_UC_RESET_SIE;
         Delay_Us( 10 );
         USBHSH->CONTROL = 0;
-        
         /* Initialize USB host configuration */
         USBHSH->CONTROL = USBHS_UC_HOST_MODE | USBHS_UC_SPEED_HIGH | USBHS_UC_INT_BUSY | USBHS_UC_DMA_EN;
         USBHSH->HOST_EP_CONFIG = USBHS_UH_EP_TX_EN | USBHS_UH_EP_RX_EN;

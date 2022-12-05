@@ -33,7 +33,6 @@ rt_err_t rt_usb_host_init(void)
         rt_kprintf("can't find usb host controller %s\n", USB_HOST_CONTROLLER_NAME);
         return -RT_ERROR;
     }
-
     /* initialize usb hub */
     rt_usbh_hub_init((uhcd_t)uhc);
 
@@ -49,7 +48,6 @@ rt_err_t rt_usb_host_init(void)
     /* register hub class driver */
     drv = rt_usbh_class_driver_hub();
     rt_usbh_class_driver_register(drv);
-
     /* initialize usb host controller */
     rt_device_init(uhc);
 
